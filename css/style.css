@@ -1,6 +1,249 @@
+/* font-family
+
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+
+/ font-family */
+
+
+
 body {
-  background: #f5f5f5;
-  font-size: 14px;
-  color: #fff;
-  font-style: italic;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
 }
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+/* BTN */
+
+.btn {
+  padding: 15px;
+  text-transform: uppercase;
+  background: none;
+  color: #00e0d0;
+  border: 1px solid #00e0d0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  
+}
+
+/* / BTN */
+
+/*container*/
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto
+}
+
+
+
+/* intro */
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+
+  background: url('../img/intro_bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.carousel__title {
+  font-size: 32px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  letter-spacing: .32px;
+  /* margin-bottom: 25px; */
+}
+
+.carousel__title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #00e0d0;
+  margin: 20px auto 30px;
+}
+
+.carousel__subtitle {
+  width: 100%;
+  max-width: 770px;
+  margin: 0 auto;
+  font-family: 'Roboto';
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: .7px;
+  margin-bottom: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
