@@ -174,15 +174,42 @@ h1,h2,h3,h4,h5,h6 {
   color: #00e0d0;
 }
 
+/* story */
 
+.story {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+}
+.story__img {
+  width: 40%;
+  margin-left: 60px;
+}
+.story__img img {
+  display: block;
+}
 
+.story__content {
+  width: 60%;
+}
 
-
-
-
-
-
-
+.story__title {
+  text-transform: uppercase;
+  color: #413d4b;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+.story__text {
+  margin-bottom: 30px;
+  color: #413d4b;
+  opacity: .75;
+  font-family: 'Roboto';
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: .42px;
+}
 
 
 
