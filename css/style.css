@@ -36,10 +36,14 @@ h1,h2,h3,h4,h5,h6 {
   border: 1px solid #00e0d0;
   border-radius: 2px;
   cursor: pointer;
+
+  transition: border-color .2s linear;
+  transition: color .1s linear;
 }
 
 .btn:hover {
-
+  color: #04aa9e;
+  border-color: #04aa9e;
 }
 
 /* / BTN */
