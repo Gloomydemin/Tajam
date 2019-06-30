@@ -1,0 +1,215 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .nav {
+    display: none;
+  }
+
+  .card__item {
+    width: 50%;
+    border: none;
+  }
+
+  .team__item {
+    width: 48%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .team__item:nth-child(2),
+  .team__item:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .team__footer {
+    padding: 30px 0;
+  }
+
+  .works__row {
+    flex-wrap: wrap;
+  }
+  .works__item {
+    width: 32.33333%;
+  }
+
+  .works__item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .form__request {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .clients {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+
+  .carousel__title {
+    font-size: 26px;
+  }
+
+  .story {
+    position: relative;
+  }
+
+  .story__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 0;
+    transform: translateY(-50%) translateX(-50%);
+    opacity: .4;
+  }
+
+  .story__content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .story__text {
+    opacity: .8;
+    color: #000;
+  }
+
+  .card__item {
+    width: 50%;
+    border: none;
+  }
+
+  .team__item {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .team__footer {
+    padding: 30px 0;
+  }
+
+  .works__row {
+    flex-wrap: wrap;
+  }
+  .works__item {
+    width: 32.33333%;
+  }
+
+  .works__item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .form__request {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .clients {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .footer__col {
+    width: 50%;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .footer__col:last-child {
+    margin: 50px auto;
+  }
+
+  .footer__social {
+
+    justify-content: center;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .story__img{
+    width: 100%;
+
+  }
+  .story__img img {
+    opacity: .3;
+  }
+
+  .card__item {
+    width: 100%;
+    border: none;
+  }
+  .about {
+    padding: 20px 0;
+  }
+  .section__header {
+    padding: 20px 0;
+  }
+
+  .works__item {
+    width: 50%;
+  }
+
+  .footer__col {
+    width: 100%;
+  }
+  .footer__header {
+    margin: 17px 0 22px;
+    font-size: 18px;
+  }
+
+  .footer__footer {
+    text-align: center;
+  }
+
+  .footer__link,
+  .footer__copyright {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer__link {
+    margin-bottom: 10px;
+  }
+  .footer__link a {
+    margin-right: 5px;
+  }
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+  .reviews__btn {
+    display: none;
+  }
+
+  .section__works {
+    justify-content: center;
+
+  }
+
+  .clients__item {
+    width: 100%;
+  }
+}
