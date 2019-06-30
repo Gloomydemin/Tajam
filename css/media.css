@@ -56,6 +56,13 @@
     padding-left: 0;
   }
 
+  .story__img {
+    margin-left: 20px;
+  }
+  .story__content {
+    margin: 30px;
+  }
+
 }
 
 /* Landscape phones and portrait tablets */
