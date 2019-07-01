@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700|Roboto:300,400&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/44f9ec6093.js"></script>
-  <link rel="stylesheet" href="./lib/owl_carousel/owl.carousel.css">
-  <link rel="stylesheet" href="./lib/owl_carousel/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <title>Tajam</title>
@@ -17,11 +16,11 @@
 <div class="page">
 
 
-<header class="header">
+<header class="header fixed" id="header">
   <div class="container">
     <div class="header__inner">
       <div class="header__logo"><img src="img/header__logo.png" alt=""></div>
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <a href="" class="nav__link active">HOME</a>
         <a href="" class="nav__link">ABOUT</a>
         <a href="" class="nav__link">EXPERTISE</a>
@@ -30,6 +29,14 @@
         <a href="" class="nav__link">PEOPLE SAY</a>
         <a href="" class="nav__link">CONTACT</a>
       </nav>
+
+      <button class="nav__toggle" id="burger" type="button" name="button">
+        <span class="nav__toggle-line nav__toggle-first"></span>
+        <span class="nav__toggle-line nav__toggle-second"></span>
+        <span class="nav__toggle-line nav__toggle-third"></span>
+        <span class="nav__toggle-line nav__toggle-fourth"></span>
+      </button>
+
     </div>
   </div>
 </header>
@@ -38,6 +45,36 @@
   <div class="carousel">
     <div class="container">
       <div class="carousel__inner">
+
+        <div class="carousel__item">
+          <h1 class="carousel__title">Awesome Creative Agency</h1>
+
+          <div class="carousel__subtitle">
+            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+          </div>
+
+          <button class="btn" type="button" name="button">LEARN MORE</button>
+        </div><!-- / carousel item -->
+
+        <div class="carousel__item">
+          <h1 class="carousel__title">We Are Awesome Creative Agency</h1>
+
+          <div class="carousel__subtitle">
+            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+          </div>
+
+          <button class="btn" type="button" name="button">LEARN MORE</button>
+        </div><!-- / carousel item -->
+
+        <div class="carousel__item">
+          <h1 class="carousel__title">We Are Awesome Creative Agency</h1>
+
+          <div class="carousel__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+
+          <button class="btn" type="button" name="button">LEARN MORE</button>
+        </div><!-- / carousel item -->
 
         <div class="carousel__item">
           <h1 class="carousel__title">We Are Awesome Creative Agency</h1>
@@ -56,12 +93,12 @@
             <div class="item"><h4>3</h4></div>
         </div> -->
 
-        <div class="carousel__marker--inner">
+        <!-- <div class="carousel__marker--inner">
           <span class="carousel__marker active"></span>
           <span class="carousel__marker"></span>
           <span class="carousel__marker"></span>
           <span class="carousel__marker"></span>
-        </div>
+        </div> -->
 
 
       </div><!-- / carousel inner -->
@@ -500,7 +537,8 @@
   integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
   crossorigin="anonymous"></script>
 
-<script src="./lib/owl_carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="app.js"></script>
 </body>
 </html>

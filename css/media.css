@@ -2,15 +2,22 @@
 @media (min-width: 1200px) {}
 
 /* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel {
+    height: 100vh;
+  }
+
+}
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 
-  .nav {
-    display: none;
+  .carousel {
+    height: 100vh;
   }
-
+  .story {
+    padding: 10px 0;
+  }
   .card__item {
     width: 50%;
     border: none;
@@ -58,9 +65,12 @@
 
   .story__img {
     margin-left: 20px;
+    display: flex;
+    align-items: center;
   }
   .story__content {
     margin: 30px;
+
   }
 
 }
@@ -71,14 +81,58 @@
     display: none;
   }
 
+  .nav__toggle {
+    display: block;
+  }
+
+  .slick-dots li {
+    display: none;
+  }
+
+  .header.fixed {
+    position: fixed;
+  padding: 0;
+  background: #4D3B7B;
+  height: 70px;
+  align-items: center;
+  display: flex;
+  }
+
+  .nav {
+    /* display: block; */
+    width: 100%;
+    top: 100%;
+    left: 0;
+    position: absolute;
+  }
+
+  .nav.active {
+    display: block;
+  }
+  .nav.active .nav__link {
+    width: 100%;
+    padding: 8px 0;
+    margin: 0;
+    text-align: center;
+    background: #4D3B7B;
+    border: none;
+  }
+
   .carousel__title {
     font-size: 26px;
+  }
+  .carousel {
+    height: 100vh;
   }
 
   .story {
     position: relative;
+    padding: 35px 0;
   }
 
+  .video {
+    height: 100vh;
+  }
   .story__img {
     position: absolute;
     left: 50%;
@@ -157,12 +211,19 @@
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+
+
+
   .story__img{
     width: 100%;
 
   }
   .story__img img {
     opacity: .3;
+  }
+
+  .story__content {
+    width: 100%;
   }
 
   .card__item {
@@ -209,6 +270,9 @@
 @media (max-width: 320px) {
   .reviews__btn {
     display: none;
+  }
+  .carousel__title {
+    font-size: 22px;
   }
 
   .section__works {

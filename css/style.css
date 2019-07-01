@@ -21,6 +21,9 @@ body {
 *:after {
     box-sizing: border-box;
 }
+ul li {
+  list-style-type: none;
+}
 
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
@@ -55,6 +58,62 @@ input, textarea, button {
 
 /* / BTN */
 
+/* burger */
+
+.nav__toggle {
+  width: 30px;
+  height: 25px;
+  margin-right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+
+  display: none;
+}
+
+.nav__toggle-line {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: block;
+
+  transition: all .4s linear;
+}
+
+.nav__toggle-first {
+  position: absolute;
+  top: 0;
+}
+.nav__toggle-second,
+.nav__toggle-third {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav__toggle-fourth {
+  position: absolute;
+  bottom: 0;
+}
+
+/* burger .active */
+
+.nav__toggle.active .nav__toggle-first,
+.nav__toggle.active .nav__toggle-fourth {
+  opacity: 0;
+}
+
+.nav__toggle.active .nav__toggle-second  {
+  transform: rotate(135deg);
+}
+
+.nav__toggle.active .nav__toggle-third {
+  transform: rotate(-135deg);
+}
+
+/* / burger */
+
 /* page */
 
 .page {
@@ -88,6 +147,7 @@ input, textarea, button {
   background-size: cover;
 }
 
+
 .carousel__title {
   /* margin-top: 180px; */
   font-size: 32px;
@@ -117,18 +177,32 @@ input, textarea, button {
   margin-bottom: 50px;
 }
 
-.carousel__marker--inner {
-  display: flex;
-  justify-content: center;
-  margin-top: 110px;
-  width: 100%;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+.slick-arrow {
+  display: none;
+
+  font-size: 0px;
+  border: none;
+  width: 0;
+  height: 0;
+  background-color: inherit;
 }
 
-.carousel__marker {
+.carousel__marker--inner,
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 110px auto 0;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  /* position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%); */
+}
+
+.carousel__marker,
+.slick-dots li {
 
   margin-right: 5px;
 
@@ -142,15 +216,33 @@ input, textarea, button {
   cursor: pointer;
 }
 
+.slick-dots button {
+  border: none;
+  background: transparent;
+  font-size: 0px;
+  color: transparent;
+  outline: none;
+}
+
 .carousel__marker:last-child {
   margin-right: 0;
 }
 
-.carousel__marker.active {
+.carousel__marker.active,
+.slick-active {
   background: #00e0d0;
   border-color: #00e0d0;
 }
+.carousel__item {
+  overflow: hidden;
+  background: inherit;
+}
 
+.slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* header */
 
 .header {
@@ -180,7 +272,8 @@ input, textarea, button {
   text-decoration: none;
   display: inline-block;
 
-  transition: color .2s linear;
+  transition: all .2s linear;
+
 
 }
 
@@ -312,13 +405,13 @@ input, textarea, button {
 }
 
 /* about */
-/* .about {
-  margin: 70px 0;
-} */
+.about {
+  padding: 30px 0;
+}
 .section__header {
   width: 100%;
   margin: 0 auto ;
-  padding: 55px 0;
+  padding: 25px 0;
   text-align: center;
 }
 .section__subtitle {
